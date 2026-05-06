@@ -6,11 +6,11 @@ PackFinder is a full-stack Progressive Web App (PWA) designed to centralize lost
 
 Since the original university VM deployment is no longer active, the easiest way to run PackFinder is locally using Docker. The application is fully containerized, separating the frontend, Express API, MariaDB database, and Nginx reverse proxy into distinct services.
 
-### Prerequisites
-Docker
+# Prerequisites
+Docker  
 Docker Compose
 
-### Installation Steps
+# Installation Steps
 
 ## 1. Clone the Repository
 git clone https://github.com/your-username/PackFinder.git  
