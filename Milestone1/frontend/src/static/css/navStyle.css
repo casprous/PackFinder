@@ -1,0 +1,166 @@
+/* importing Google fonts from NCSU branding assets */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* general styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+main {
+  padding-bottom: 80px;
+}
+
+/* top nav */
+.top-navbar, .mobile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background-color: #990000;
+  color: #ffffff;
+  font-weight: bold;
+  z-index: 150;
+  position: relative;
+}
+
+.top-navbar .menu-icon {
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.top-navbar .logo {
+  flex: 1;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.mobile-header .logo {
+  flex: 1;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.top-navbar .icons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 3px;
+}
+
+.top-navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.top-navbar button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* bottom nav */
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #990000;
+  padding: 8px 0;
+  color: white;
+  gap: 20px;
+  z-index: 100;
+}
+
+.bottom-nav button,
+.bottom-nav a {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.top-navbar .material-symbols-outlined:hover,
+.bottom-nav .material-symbols-outlined:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.top-navbar .material-symbols-outlined,
+.bottom-nav .material-symbols-outlined {
+  margin-top: 8px;
+  font-size: 28px;
+}
+
+/* drawer menu */
+#drawer {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 2px 0 6px rgba(0,0,0,0.2);
+  transition: left 0.3s ease;
+  z-index: 200;
+  padding: 16px;
+}
+
+#drawer.open {
+  left: 0;
+}
+
+#drawer h2 {
+  margin-bottom: 16px;
+  color: #990000;
+}
+
+.menu-dropdown a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.menu-dropdown a:hover {
+  background-color: #f0f0f0;
+}
+
+
+/* responsive */
+@media screen and (min-width: 600px) {
+
+  .bottom-nav,
+  .mobile-header {
+    display: none;
+  }
+
+  .search-container input {
+    width: 50%;
+  }
+
+  .top-navbar {
+    display: flex;
+  }
+
+}
+
+@media screen and (max-width: 599px) {
+
+  .top-navbar {
+    display: none;
+  }
+
+}

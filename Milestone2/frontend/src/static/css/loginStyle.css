@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* NC State Brand Colors */
+:root {
+  --wolfpack-red: #CC0000;
+  --wolfpack-red-dark: #990000;
+  --wolfpack-black: #000000;
+  --wolfpack-white: #FFFFFF;
+  --background: #f2f2f2;
+  --input-border: #ccc;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: var(--background);
+  margin: 0;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* App title */
+.app-title {
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--wolfpack-red);
+  /* text-transform: uppercase; */
+  letter-spacing: 1px;
+}
+
+/* Login box */
+.login-container {
+  background: var(--wolfpack-white);
+  padding: 30px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 2px 6px var(--shadow);
+  border-top: 4px solid var(--wolfpack-red);
+}
+
+.login-container h2 {
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-weight: 700;
+  color: var(--wolfpack-black);
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+/* Form styling */
+.login-container label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid var(--input-border);
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 0.95rem;
+}
+
+.login-container input:focus {
+  outline: none;
+  border-color: var(--wolfpack-red);
+  box-shadow: 0 0 0 2px rgba(204, 0, 0, 0.15);
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: var(--wolfpack-red);
+  color: var(--wolfpack-white);
+  border: none;
+  border-radius: 6px;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--wolfpack-red-dark);
+}

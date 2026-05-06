@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Post</title>
+  <link rel="stylesheet" href="/css/navStyle.css">
+  <link rel="stylesheet" href="/css/postStyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <script src="/js/idb.js" defer></script>
+  <script src="/js/menu.js" defer></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="/js/post.js" defer></script>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#CC0000">
+  <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+</head>
+
+<body>
+  <main>
+    <header class="mobile-header">
+      <div class="logo">PackFinder</div>
+    </header>
+
+    <header class="top-navbar">
+      <a id="menuToggle" class="menu-icon">
+        <span class="material-symbols-outlined">menu</span>
+      </a>
+      <div class="logo">PackFinder</div>
+      <div class="icons">
+        <a href="notifications.html" id="notif-btn" style="position: relative;">
+          <span class="material-symbols-outlined">notifications</span>
+          <span class="notif-badge">0</span>
+        </a>
+        <a href="profile.html" id="profile-btn"><span class="material-symbols-outlined">person</span></a>
+      </div>
+    </header>
+
+    <nav id="drawer" class="menu">
+      <h2>Menu</h2>
+      <div id="menu-dropdown" class="menu-dropdown">
+        <a href="home.html">Home</a>
+        <a href="map.html">Map</a>
+        <a href="forum.html">Forum</a>
+      </div>
+    </nav>
+
+    <div class="form-container container">
+      <h2 class="page-title">Create a Post</h2>
+      
+      <form id="create-post-form">
+        <label for="title">Item Name/Title</label>
+        <input type="text" id="title" name="title" placeholder="Item Name/Title" required>
+
+        <label for="description">Description</label>
+        <textarea id="description" name="description" rows="4" placeholder="Description" required></textarea>
+
+        <div class="split-row">
+          <div class="col">
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" placeholder="Location Name (e.g., Talley)" required>
+          </div>
+          <div class="col">
+            <label for="status">Status</label>
+            <select id="status" name="status" required>
+              <option value="Lost">Lost</option>
+              <option value="Found">Found</option>
+            </select>
+          </div>
+        </div>
+
+        <p class="map-hint">Click the map to drop a pin for the exact location:</p>
+        <div id="post-map-preview"></div>
+
+        <label for="image-upload" class="upload-label">Upload Image</label>
+        <input type="file" id="image-upload" accept="image/jpeg, image/png, image/webp">
+
+        <button type="submit" id="submit-btn">Submit Post</button>
+      </form>
+    </div>
+
+    <nav class="bottom-nav">
+      <button id="mobile-menu-btn"><span class="material-symbols-outlined">menu</span></button>
+      <a href="map.html" id="mobile-map-btn"><span class="material-symbols-outlined">location_on</span></a>
+      <a href="notifications.html" id="mobile-notif-btn" style="position: relative;">
+        <span class="material-symbols-outlined">notifications</span>
+        <span class="notif-badge">0</span>
+      </a>
+      <a href="profile.html" id="mobile-profile-btn"><span class="material-symbols-outlined">person</span></a>
+    </nav>
+  </main>
+</body>
+</html>

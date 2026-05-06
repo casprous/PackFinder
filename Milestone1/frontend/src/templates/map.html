@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map</title>
+  <link rel="stylesheet" href="/css/navStyle.css">
+  <link rel="stylesheet" href="/css/mapStyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <script src="/js/menu.js" defer></script>
+  <script src="/js/map.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <header class="mobile-header">
+      <div class="logo">PackFinder</div>
+    </header>
+
+    <header class="top-navbar">
+      <a id="menuToggle" class="menu-icon">
+        <span class="material-symbols-outlined">menu</span>
+      </a>
+      <div class="logo">PackFinder</div>
+      <div class="icons">
+        <button id="notif-btn"><span class="material-symbols-outlined">notifications</span></button>
+        <a href="profile.html" id="profile-btn"><span class="material-symbols-outlined">person</span></a>
+      </div>
+    </header>
+
+    <nav id="drawer" class="menu">
+      <h2>Menu</h2>
+      <div id="menu-dropdown" class="menu-dropdown">
+        <a href="home.html">Home</a>
+        <a href="map.html">Map</a>
+        <a href="forum.html">Forum</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="page-title">
+        <h2>Map</h2>
+      </div>
+
+      <div class="search-row">
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="Search posts...">
+        </div>
+      </div>
+
+      <div id="map-placeholder">
+        <p>Interactive map should go here. Loading desk locations...</p>
+      </div>
+    </div>
+
+    <nav class="bottom-nav">
+      <button id="mobile-menu-btn"><span class="material-symbols-outlined">menu</span></button>
+      <a href="map.html" id="mobile-map-btn"><span class="material-symbols-outlined">location_on</span></a>
+      <button id="mobile-notif-btn"><span class="material-symbols-outlined">notifications</span></button>
+      <a href="profile.html" id="mobile-profile-btn"><span class="material-symbols-outlined">person</span></a>
+    </nav>
+
+  </main>
+</body>
+</html>

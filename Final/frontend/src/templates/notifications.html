@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notifications - PackFinder</title>
+  
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#CC0000">
+  <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+
+  <link rel="stylesheet" href="/css/navStyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <script src="/js/idb.js" defer></script>
+  <script src="/js/menu.js" defer></script>
+  <script src="/js/notifications.js" defer></script>
+  
+  <style>
+    .notif-container { max-width: 600px; margin: 20px auto; padding: 0 15px; }
+    .notif-card { 
+      padding: 15px; margin-bottom: 10px; border-radius: 8px; 
+      background-color: #fff; border: 1px solid #ddd;
+      cursor: pointer; transition: background-color 0.2s ease;
+      display: flex; align-items: center; gap: 15px;
+    }
+    .notif-card:hover { background-color: #f9f9f9; }
+    .notif-unread { background-color: #fff5f5; border-left: 5px solid #CC0000; }
+    .notif-icon { color: #CC0000; font-size: 24px; }
+    .notif-content { flex-grow: 1; }
+    .notif-time { font-size: 0.8rem; color: #888; margin-top: 5px; }
+    .empty-state { text-align: center; color: #666; margin-top: 50px; }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="mobile-header">
+      <div class="logo">PackFinder</div>
+    </header>
+    
+    <header class="top-navbar">
+      <a id="menuToggle" class="menu-icon">
+        <span class="material-symbols-outlined">menu</span>
+      </a>
+      <div class="logo">PackFinder</div>
+      <div class="icons">
+        <a href="notifications.html" id="notif-btn">
+          <span class="material-symbols-outlined">notifications</span>
+          <span class="notif-badge">0</span>
+        </a>
+        <a href="profile.html" id="profile-btn"><span class="material-symbols-outlined">person</span></a>
+      </div>
+    </header>
+
+    <nav id="drawer" class="menu">
+      <h2>Menu</h2>
+      <div id="menu-dropdown" class="menu-dropdown">
+        <a href="home.html">Home</a>
+        <a href="map.html">Map</a>
+        <a href="forum.html">Forum</a>
+      </div>
+    </nav>
+
+    <div class="notif-container">
+      <h2 style="margin-bottom: 20px;">Your Notifications</h2>
+      <button id="enable-push-btn" style="padding: 10px; background: #CC0000; color: white; border: none; border-radius: 4px; margin-bottom: 15px; cursor: pointer;">
+    Enable Push Notifications
+</button>
+      <div id="notifications-list">
+        <p class="empty-state">Loading notifications...</p>
+      </div>
+    </div>
+
+    <nav class="bottom-nav">
+      <button id="mobile-menu-btn"><span class="material-symbols-outlined">menu</span></button>
+      <a href="map.html" id="mobile-map-btn"><span class="material-symbols-outlined">location_on</span></a>
+      <a href="notifications.html" id="mobile-notif-btn" style="position: relative;">
+        <span class="material-symbols-outlined">notifications</span>
+        <span class="notif-badge">0</span>
+      </a>
+      <a href="profile.html" id="mobile-profile-btn"><span class="material-symbols-outlined">person</span></a>
+    </nav>
+  </main>
+</body>
+</html>

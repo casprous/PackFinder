@@ -1,0 +1,21 @@
+/* page container */
+.container {
+  padding: 16px;
+}
+
+/* title section */
+.title {
+  margin-bottom: 10px;
+}
+
+.title h2 {
+  font-size: 1.6rem;
+  color: #990000;
+}
+
+/* placeholder text */
+.container p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}

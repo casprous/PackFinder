@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "username": "@alice",
+    "email": "alice@ncsu.edu",
+    "role": "student"
+  },
+  {
+    "id": 2,
+    "username": "@bob",
+    "email": "bob@ncsu.edu",
+    "role": "staff"
+  }
+]

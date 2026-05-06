@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forum</title>
+  <link rel="stylesheet" href="/css/navStyle.css">
+  <link rel="stylesheet" href="/css/forumStyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <script src="/js/idb.js" defer></script>
+  <script src="/js/menu.js" defer></script>
+  <script src="/js/forum.js" defer></script>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#CC0000">
+  <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+</head>
+
+<body>
+  <main>
+
+    <header class="mobile-header">
+      <div class="logo">PackFinder</div>
+    </header>
+    
+    <header class="top-navbar">
+      <a id="menuToggle" class="menu-icon">
+        <span class="material-symbols-outlined">menu</span>
+      </a>
+      <div class="logo">PackFinder</div>
+      <div class="icons">
+        <a href="notifications.html" id="notif-btn" style="position: relative;">
+          <span class="material-symbols-outlined">notifications</span>
+          <span class="notif-badge">0</span>
+        </a>
+        <a href="profile.html" id="profile-btn"><span class="material-symbols-outlined">person</span></a>
+      </div>
+    </header>
+
+    <nav id="drawer" class="menu">
+      <h2>Menu</h2>
+      <div id="menu-dropdown" class="menu-dropdown">
+        <a href="home.html">Home</a>
+        <a href="map.html">Map</a>
+        <a href="forum.html">Forum</a>
+      </div>
+    </nav>
+
+    <div class="search-post-row">
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search posts...">
+      </div>
+      <div class="post-btn">
+        <a href="post.html" id="create-post-btn">
+          <span class="material-symbols-outlined">add</span> Make Post
+        </a>
+      </div>
+    </div>
+
+    <div class="forum-info">
+      <button class="forum-info-toggle" id="forum-info-toggle">
+        <span class="material-symbols-outlined">info</span>
+        How it works
+        <span class="material-symbols-outlined" id="forum-info-chevron">expand_more</span>
+      </button>
+      <div class="forum-info-content" id="forum-info-content">
+        <div class="forum-info-statuses">
+          <div class="forum-info-status-item">
+            <span class="forum-status-dot lost"></span>
+            <div>
+              <strong>Lost</strong>
+              <p>The item has been lost and the owner is looking for it.</p>
+            </div>
+          </div>
+          <div class="forum-info-status-item">
+            <span class="forum-status-dot found"></span>
+            <div>
+              <strong>Found</strong>
+              <p>Someone found the item and is trying to return it to its owner.</p>
+            </div>
+          </div>
+          <div class="forum-info-status-item">
+            <span class="forum-status-dot turned-in"></span>
+            <div>
+              <strong>Turned In</strong>
+              <p>The item has been returned to its owner.</p>
+            </div>
+          </div>
+        </div>
+        <ul class="forum-info-tips">
+          <li>Search by post title or username using the search bar above.</li>
+          <li>Reply to a post to contact the person who lost or found the item.</li>
+          <li>Only the original poster can update the status of their item.</li>
+          <li>Visit the <a href="map.html">Map</a> to see item locations and official L&F desks on campus.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="postList" class="forum-posts"></div>
+
+    <template id="postTemplate">
+      <div class="post container">
+        <div class="user" style="font-weight: bold;"></div>
+        
+        <div class="timestamp" style="font-size: 0.8rem; color: #888; margin-bottom: 10px;"></div>
+        
+        <div class="content"></div>
+        
+        <img class="post-image" style="max-width: 100%; max-height: 400px; border-radius: 8px; margin-top: 10px; display: none; object-fit: cover;" />
+
+        <div class="replies-container" style="margin-top: 15px; border-top: 1px solid #eee; padding-top: 10px;"></div>
+        
+        <form class="reply-form" style="margin-top: 10px; display: flex; gap: 10px;">
+          <input type="text" class="reply-input" placeholder="Add a reply..." required style="flex-grow: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+          <button type="submit" style="padding: 8px 16px; background: #990000; color: white; border: none; border-radius: 4px; cursor: pointer;">Reply</button>
+        </form>
+      </div>
+    </template>
+
+    <nav class="bottom-nav">
+      <button id="mobile-menu-btn"><span class="material-symbols-outlined">menu</span></button>
+      <a href="map.html" id="mobile-map-btn"><span class="material-symbols-outlined">location_on</span></a>
+      <a href="notifications.html" id="mobile-notif-btn" style="position: relative;">
+        <span class="material-symbols-outlined">notifications</span>
+        <span class="notif-badge">0</span>
+      </a>
+      <a href="profile.html" id="mobile-profile-btn"><span class="material-symbols-outlined">person</span></a>
+    </nav>
+
+  </main>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PackFinder</title>
+  <script src="/js/idb.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Check if the JWT exists in local storage
+      const token = localStorage.getItem('token');
+      
+      if (token) {
+        // Logged in -> go to home
+        window.location.href = '/home.html';
+      } else {
+        // Not logged in -> go to login
+        window.location.href = '/login.html';
+      }
+    });
+  </script>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#CC0000">
+  <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+</head>
+<body>
+</body>
+</html>

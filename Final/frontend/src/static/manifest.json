@@ -1,0 +1,22 @@
+{
+  "name": "NCSU PackFinder",
+  "short_name": "PackFinder",
+  "description": "The centralized campus lost and found platform for NC State University.",
+  "start_url": "/home.html",
+  "display": "standalone",
+  "background_color": "#f4f4f4",
+  "theme_color": "#CC0000",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

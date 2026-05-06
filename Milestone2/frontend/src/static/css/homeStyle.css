@@ -1,0 +1,123 @@
+/* page container */
+.container {
+  padding: 16px;
+}
+
+/* sneakpeek section wrapper */
+.sneakpeek-section {
+  margin-bottom: 28px;
+}
+
+.sneakpeek-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.sneakpeek-header h2 {
+  font-size: 1.4rem;
+  color: #990000;
+  margin: 0;
+}
+
+.sneakpeek-link {
+  font-size: 0.85rem;
+  color: #990000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sneakpeek-link:hover {
+  text-decoration: underline;
+}
+
+.sneakpeek-desc {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0 0 12px 0;
+}
+
+/* card grid */
+.sneakpeek-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* individual cards */
+.sneakpeek-card {
+  background: white;
+  border-radius: 8px;
+  padding: 12px 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  border-left: 4px solid #990000;
+}
+
+.sneakpeek-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.14);
+  transform: translateY(-1px);
+}
+
+.sneakpeek-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.sneakpeek-title {
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+.sneakpeek-location {
+  font-size: 0.82rem;
+  color: #666;
+}
+
+.sneakpeek-user {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* status badges */
+.sneakpeek-status {
+  font-size: 0.72rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  color: white;
+}
+
+.status-lost      { background: #CC0000; }
+.status-found     { background: #2e7d32; }
+.status-turned-in { background: #1565c0; }
+.status-desk      { background: #e65100; }
+
+/* empty/loading state */
+.sneakpeek-empty {
+  font-size: 0.9rem;
+  color: #888;
+  margin: 0;
+}
+
+/* "View more" link at bottom of grid */
+.sneakpeek-view-more {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: #990000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sneakpeek-view-more:hover {
+  text-decoration: underline;
+}

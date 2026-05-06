@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "user": "@alice",
+    "title": "Lost Red Backpack",
+    "description": "I lost my red backpack near Talley Student Center. It has a laptop and some textbooks inside.",
+    "location": "Talley Student Center",
+    "status": "lost"
+  },
+  {
+    "id": 2,
+    "user": "@bob",
+    "title": "Found Keys",
+    "description": "Found a set of keys in Hill library today. I turned them in at the Hill Ask Us Desk",
+    "location": "Hill Library",
+    "status": "turned in"
+  }
+]

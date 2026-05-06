@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="/css/navStyle.css">
+  <link rel="stylesheet" href="/css/homeStyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <script src="/js/idb.js" defer></script>
+  <script src="/js/menu.js" defer></script>
+  <script src="/js/home.js" defer></script>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#CC0000">
+  <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+</head>
+<body>
+  <main>
+    <header class="mobile-header">
+      <div class="logo">PackFinder</div>
+    </header>
+
+    <!-- top navbar for desktop -->
+    <header class="top-navbar">
+      <a id="menuToggle" class="menu-icon">
+        <span class="material-symbols-outlined">menu</span>
+      </a>
+      <div class="logo">PackFinder</div>
+      <div class="icons">
+        <a href="notifications.html" id="notif-btn" style="position: relative;">
+          <span class="material-symbols-outlined">notifications</span>
+          <span class="notif-badge">0</span>
+        </a>
+        <a href="profile.html" id="profile-btn">
+          <span class="material-symbols-outlined">person</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- sidebar menu -->
+    <nav id="drawer" class="menu">
+      <h2>Menu</h2>
+      <div id="menu-dropdown" class="menu-dropdown">
+        <a href="home.html">Home</a>
+        <a href="map.html">Map</a>
+        <a href="forum.html">Forum</a>
+      </div>
+    </nav>
+
+    <!------------------HOME SPECIFIC PAGE CONTENT STARTS HERE------------------>
+    <div class="container">
+
+      <!-- map sneakpeek -->
+      <div class="sneakpeek-section">
+        <div class="sneakpeek-header">
+          <h2>Campus Map</h2>
+          <a href="map.html" class="sneakpeek-link">View full map →</a>
+        </div>
+        <p class="sneakpeek-desc">Official lost &amp; found desk locations across campus.</p>
+        <div id="map-sneakpeek" class="sneakpeek-grid">
+          <p class="sneakpeek-empty">Loading map data...</p>
+        </div>
+      </div>
+
+      <!-- forum sneakpeek -->
+      <div class="sneakpeek-section">
+        <div class="sneakpeek-header">
+          <h2>Recent Posts</h2>
+          <a href="forum.html" class="sneakpeek-link">See all posts →</a>
+        </div>
+        <p class="sneakpeek-desc">The latest lost &amp; found activity on campus.</p>
+        <div id="forum-sneakpeek" class="sneakpeek-grid">
+          <p class="sneakpeek-empty">Loading posts...</p>
+        </div>
+      </div>
+
+    </div>
+    <!-------------------HOME SPECIFIC PAGE CONTENT ENDS HERE------------------->
+
+    <!-- bottom navigation for mobile -->
+    <nav class="bottom-nav">
+      <button id="mobile-menu-btn">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <a href="map.html" id="mobile-map-btn">
+        <span class="material-symbols-outlined">location_on</span>
+      </a>
+      <a href="notifications.html" id="mobile-notif-btn" style="position: relative;">
+        <span class="material-symbols-outlined">notifications</span>
+        <span class="notif-badge">0</span>
+      </a>
+      <a href="profile.html" id="mobile-profile-btn">
+        <span class="material-symbols-outlined">person</span>
+      </a>
+    </nav>
+  </main>
+</body>
+</html>

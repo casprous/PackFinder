@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Talley Student Center Desk",
+    "coordinates": {"lat": 35.7840, "lng": -78.6710}
+  },
+  {
+    "id": 2,
+    "name": "Hill Library Ask Us Desk",
+    "coordinates": {"lat": 35.7877, "lng": -78.6696}
+  }
+]

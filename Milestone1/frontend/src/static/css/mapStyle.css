@@ -1,0 +1,45 @@
+/* page container */
+.container {
+  padding: 16px;
+}
+
+/* title section */
+.page-title {
+  margin-bottom: 10px;
+}
+
+.page-title h2 {
+  font-size: 1.6rem;
+  color: #990000;
+}
+
+/* placeholder text */
+.container p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* search row */
+.search-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+
+.search-container {
+  padding: 0;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-row .search-container {
+  flex: 1;
+  min-width: 220px;
+}
